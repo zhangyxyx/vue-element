@@ -8,6 +8,20 @@ this.$eventbus.$on('getFormNowFunc',function(){
 })
 
 ```
+*  elementui中table的默认选中
+```JavaScript
+that.multipleSelection=result.data  
+that.multipleSelection.forEach(row => {
+  this.$refs.multipleTable.toggleRowSelection(
+    this.tableData.find(item => { return row.code == item.code;}
+  ),true);
+});
+
+```
+
+ 
+
+
 
 *  滚动条样式
 ```JavaScript
@@ -159,6 +173,9 @@ k5,v5
 */
 
 ```
+
+
+
 
 
  
