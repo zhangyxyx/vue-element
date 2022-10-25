@@ -19,6 +19,19 @@ that.multipleSelection.forEach(row => {
 
 ```
 
+*  vue中引入html文件
+```JavaScript
+//在public中放静态文件
+//创建app.vue
+	  
+<iframe
+style="width: 100%; height: 100%;padding: 0.1rem;box-sizing: border-box;"
+ref="tempHtml" 
+:src='src' 
+frameborder="0" 
+></iframe>
+```
+
  
 
 
