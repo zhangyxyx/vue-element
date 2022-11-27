@@ -61,7 +61,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 *  vue中表格将选中的行 取消选中
 ```JavaScript
-that.$refs.multipleTable.clearSelection()
+arr.forEach(row => {  
+that.$refs.multipleTableAll.toggleRowSelection(row, false);
+});
 
 ```
 
@@ -69,6 +71,12 @@ that.$refs.multipleTable.clearSelection()
 ```JavaScript
 that.$refs.multipleTable.clearSelection()
 
+```
+
+
+*  vue将获取当前选中
+```JavaScript
+this.$refs.multipleTableAll.selection
 ```
  
  
